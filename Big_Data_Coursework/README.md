@@ -1,6 +1,6 @@
 ==============================
-M32895_Big_Data_Coursework
-Bike Sharing Dataset
+**M32895_Big_Data_Coursework**
+**Bike Sharing Dataset**
 ==============================
 
 ==============================
@@ -774,9 +774,11 @@ N/A, the notebook runs from top to bottom.
 ==============================
 ## Acknowledgements
 
-Dataset used: https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset
+[1] Dataset used: https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset
 
-Beneath the RAEDME file of the Dataset used is this
+[2] The structure and formatting of this README was inspired by the README provided with my datatset by Hadi Fanaee-T and it was used to undertsnad my dataset.
+
+[3] Beneath the RAEDME file of the Dataset used is this
 "Use of this dataset in publications must be cited to the following publication:
 [1] Fanaee-T, Hadi, and Gama, Joao, "Event labeling combining ensemble detectors and background knowledge", Progress in Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg, doi:10.1007/s13748-013-0040-3.
 
@@ -793,19 +795,19 @@ Beneath the RAEDME file of the Dataset used is this
 	pages={1-15}
 }"
 
-AI Acknowledgement:
+[4] AI Acknowledgement:
 - Formatting my code so it follows the correct style for Python
 - Reading error messages to help me understand why my code isnt working
 - It made variable names for me that were readable and appropriate, as i struggle with coming up with educational names
 - Getting feedback on my work
 - For structuring my Jupyter notebook and README file for a better flow
 
-My code was written with guidance from the M32895 Big Data Applications module taught by Dr Sergey Yakovlev at the University of Portsmouth.
+[5] My code was written with guidance from the M32895 Big Data Applications module taught by Dr Sergey Yakovlev at the University of Portsmouth.
 The code snippets used were from the following lessons: lessons 4.2, 5.1, 5.2, 6.1, 6.2, 8.1
 All adapted code is referenced to the relevant lesson in markdowns
 Module repository: https://github.com/sadiam09/m32895-tb2-2026
 
-The Malaria Detector Project by Kathrinmzl was used for help on pipeline structure: https://github.com/kathrinmzl/MalariaDetector/tree/main
+[6] The Malaria Detector Project by Kathrinmzl was used for help on pipeline structure: https://github.com/kathrinmzl/MalariaDetector/tree/main
 
 ## References
 
@@ -865,11 +867,11 @@ The Malaria Detector Project by Kathrinmzl was used for help on pipeline structu
 ==============================
 ## Conclusion
 
-The ML pipeline successfully predicts hourly bike rental demand using the Bike Sharing dataset from Kaggle.
-Two models were built and compared using Linear Regression and Decision Tree Regressor
-The Decision Tree Regressor outperformed Linear Regression across all metrics on the test set.
-Hyperparameter optimisation improved the Decision Tree model further by changing the `max_depth = 13` as the optimal value using the validation set.
-The optimised Decision Tree achieved a test R2 score of 0.655. This means it explains 65.5% of the variance in bike rental demand
-The model performs well on low to medium rental counts but struggles with very high counts, which may be due to unpredictable events not being properly captured in the dataset.
-Future improvements could include testing additional models, tuning more hyperparameters, more features and using a larger dataset.
+* The ML pipelines successfully predicts hourly bike rental demand using the Bike Sharing dataset from Kaggle.
+* Two models were built and compared using Linear Regression and Decision Tree Regressor
+* The Decision Tree Regressor outperformed Linear Regression across all metrics on the test set.
+* Hyperparameter optimisation improved the Decision Tree model more by changing the `max_depth = 13` as the optimal value using the validation set.
+* The optimised Decision Tree achieved a test R2 score of 0.655. This means it explains 65.5% of the variance in bike rental demand
+* The model performs well on low to medium rental counts but struggles with very high counts, which may be due to unpredictable events not being properly captured in the dataset.
+* Future improvements could be testing additional models, tuning more hyperparameters, more features and using a larger dataset.
 ==============================
