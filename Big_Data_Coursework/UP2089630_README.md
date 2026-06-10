@@ -425,7 +425,7 @@ def max_depth_error(md):
 ```
 I created a function to test one max_depth value at a time.
 Each time, the model was trained on the training set and then checked on both the training and validation sets.
-I used `model.score()` because `.score()` gives the R2 score, so this gave me an error value that was easy to compare
+I used `1 - model.score()` because `.score()` gives the R2 score, so this gave me an error value that was easy to compare
 
 I then used a loop to test max_depth values from 1 to 20.
 The results were stored in a list and converted into a DataFrame so I could view them as a table.
@@ -871,7 +871,7 @@ Module repository: https://github.com/sadiam09/m32895-tb2-2026
 * Two models were built and compared using Linear Regression and Decision Tree Regressor
 * The Decision Tree Regressor outperformed Linear Regression across all metrics on the test set.
 * Hyperparameter optimisation improved the Decision Tree model more by changing the `max_depth = 13` as the optimal value using the validation set.
-* The optimised Decision Tree achieved a test R2 score of 0.655. This means it explains 65.5% of the variance in bike rental demand
-* The model performs well on low to medium rental counts but struggles with very high counts, which may be due to unpredictable events not being properly captured in the dataset.
+* The optimised Decision Tree achieved a test R2 score of 0.902. This means it explains 90.2% of the variance in bike rental demand
+* The final model imrpoved predictions for btoh low and high rental counts, however some high rental counts were still harder to get an accurate prediction
 * Future improvements could be testing additional models, tuning more hyperparameters, more features and using a larger dataset.
 ==============================
